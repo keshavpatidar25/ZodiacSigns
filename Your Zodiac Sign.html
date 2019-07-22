@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Find Your Zodiac Sign</title>
+<link rel="stylesheet" type="text/css" href="Zodiac CSS.css" />
+<style type="text/css">
+	p.info{
+		margin:0;	
+		font: 24px bold Tahoma, Geneva, sans-serif;
+		word-wrap: break-word;
+		text-align:center;}
+	div#findsign{
+		margin:0;
+		padding-top: 25px;
+		height:250px;
+	}
+	img
+	{
+			text-align:center;
+	}
+</style>
+<script type="text/javascript">
+	function signfind(str)
+	{
+		if(str=="21 March To 20 April")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>" + "Your Zodiac Sign is Aries" + "<br />" + "<br />" + "<a href='Aries.html' title='Aries'>" + "<img src='Images/Aries.gif' />" + "</a>" + "</p>";
+		}
+		else if(str=="21 April To 20 May")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Taurus <br /> <br /> <a href='Taurus.html' title='Taurus'><img src='Images/Taurus.gif' /></a>  </p>";
+		}
+		else if(str=="21 May To 21 June")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Gemini <br /> <br /> <a href='Gemini.html' title='Gemini'><img src='Images/Gemini.gif' /></a> </p>";
+		}
+		else if(str=="22 June To 22 July")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Cancer <br /> <br /> <a href='Cancer.html' title='Cancer'><img src='Images/Cancer.gif' /> </a> </p>";
+		}
+		else if(str=="23 July To 22 August")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Leo <br /> <br /> <a href='Leo.html' title='Leo'><img src='Images/Leo.gif' /></a> </p>";
+		}
+		else if(str=="23 August To 22 September")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Virgo <br /> <br /> <a href='Virgo.html' title='Virgo'><img src='Images/Virgo.gif' /></a> </p>";
+		}
+		else if(str=="23 September To 22 October")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Libra <br /> <br /> <a href='Libra.html' title='Libra'><img src='Images/Libra.gif' /></a> </p>";
+		}
+		else if(str=="23 October To 22 November")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Scorpio <br /> <br /> <a href='Scorpio.html' title='Scorpio'><img src='Images/Scorpio.gif' /></a> </p>";
+		}
+		else if(str=="23 November To 21 December")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Sagittarius <br /> <br /> <a href='Sagittarius.html' title='Sagittarius'><img src='Images/Sagittarius.gif' /></a> </p>";
+		}
+		else if(str=="22 December To 19 January")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Capricorn <br /> <br /> <a href='Capricorn.html' title='Capricorn'><img src='Images/Capricorn.gif' /></a> </p>";
+		}
+		else if(str=="20 January To 18 February")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Aquarius <br /> <br /> <a href='Aquarius.html' title='Aquarius'><img src='Images/Aquarius.gif' /></a> </p>";
+		}
+		else if(str=="19 February To 20 March")
+		{
+				document.getElementById("findsign").innerHTML="<p class='info'>Your Zodiac Sign is Pisces <br /> <br /> <a href='Pisces.html' title='Pisces'><img src='Images/Pisces.gif' /></a> </p>";
+		}
+	}
+</script>
+</head>
+<body onload="signfind(document.getElementsByName('sign').item(0).value);document.getElementsByTagName('option').item(0).selected='selected';">
+  <div id="header">Zodiac Signs</div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="Zodiac Signs.htm">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Your Zodiac Sign.html">Your Zodiac Sign</a></li>
+      <li><a href="Aries.html">Aries</a></li>
+      <li><a href="Taurus.html">Taurus</a></li>
+      <li><a href="Gemini.html">Gemini</a></li>
+      <li><a href="Cancer.html">Cancer</a></li>
+      <li><a href="Leo.html">Leo</a></li>
+      <li><a href="Virgo.html">Virgo</a></li>
+      <li><a href="Libra.html">Libra</a></li>
+      <li><a href="Scorpio.html">Scorpio</a></li>
+      <li><a href="Sagittarius.html">Sagittarius</a></li>
+      <li><a href="Capricorn.html">Capricorn</a></li>
+      <li><a href="Aquarius.html">Aquarius</a></li>
+      <li><a href="Pisces.html">Pisces</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <br />
+	<h1>Choose Your Date of Birth</h1>
+	<br />
+	<p style="text-align:center;">
+	<select name="sign" style="text-align:center; font: bold 22px Arial, Helvetica, sans-serif;" onchange="signfind(this.value);">
+		<option selected="selected">21 March To 20 April</option>
+		<option>21 April To 20 May</option>
+		<option>21 May To 21 June</option>
+		<option>22 June To 22 July</option>
+		<option>23 July To 22 August</option>
+		<option>23 August To 22 September</option>
+	    <option>23 September To 22 October</option>
+		<option>23 October To 22 November</option>
+        <option>23 November To 21 December</option>
+		<option>22 December To 19 January</option>
+	    <option>20 January To 18 February</option>
+		<option>19 February To 20 March</option>
+    </select>
+    </p>
+    <div id="findsign"></div>
+  </div>
+  <div id="footer" style="clear:both">
+  <br /><br /><p>Copyright 2011 by Keshav Patidar. All Rights Reserved.</p></div>
+</body>
+</html>
